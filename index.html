@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>救赎者官网</title>
+</head>
+<body>
+  <!-- 顶部区域 -->
+  <div class="top-bar">
+    <div class="logo-box">
+      <img src="images/yi.png" alt="LOGO">
+      <div>
+        <div class="logo-text special-text">救赎者</div> 
+        <div class="slogan">专注笔记本电脑销售十八年！</div>
+      </div>
+    </div>
+    
+    <div class="top-image-box">
+      <img src="images/er.png" alt="顶部广告图">
+    </div>
+    
+    <div class="top-links">
+      <a href="#">救赎者店铺</a>
+      <a href="#">APP 下载</a>
+      <a href="#">登录</a>
+      <a href="#">注册</a>
+    </div>
+  </div>
+  <!-- 原头部导航 -->
+  <div class="header">
+    <div class="logo">笔记本电脑推荐</div> 
+    <ul class="nav">
+      <li><a href="#home">首页</a></li>
+      <li><a href="#game">游戏本</a></li>
+      <li><a href="#office">办公本</a></li>
+    </ul>
+  </div>
+  <!-- 轮播图 -->
+  <div class="slideshow">
+    <div class="slide active">
+      <img src="images/san.png" alt="banner1">
+      <div class="slide-text">幻灯片1</div>
+    </div>
+    <div class="slide">
+      <img src="images/si.png" alt="banner2">
+      <div class="slide-text">幻灯片2</div>
+    </div>
+    <div class="slide">
+      <img src="images/wu.png" alt="banner3">
+      <div class="slide-text">幻灯片3</div>
+    </div>
+  </div>
+
+  <!-- 游戏本推荐（6个项目） -->
+  <h2 class="title" id="game">游戏本推荐</h2>
+  <div class="product-list">
+    <div class="product-item">
+      <img src="images/wu.png" alt="游戏本1">
+      <div class="product-info">
+        <h3>游戏本A</h3>
+        <p>简介：高性能游戏本，畅玩3A大作！</p>
+        <p>价格：4999元</p>
+        <span class="detail-btn"
+          onclick="showConfig('游戏本A配置<br>CPU：i7-12700H<br>显卡：RTX 4060<br>内存：16G DDR5<br>硬盘：512G SSD')">查看配置</span>
+      </div>
+    </div>
+    <div class="product-item">
+      <img src="images/wu.png" alt="游戏本2">
+      <div class="product-info">
+        <h3>游戏本B</h3>
+        <p>简介：高性价比，散热强劲！</p>
+        <p>价格：4999元</p>
+        <span class="detail-btn"
+          onclick="showConfig('游戏本B配置<br>CPU：R7-7840HS<br>显卡：RTX 4050<br>内存：32G DDR5<br>硬盘：1T SSD')">查看配置</span>
+      </div>
+    </div>
+    <div class="product-item">
+      <img src="images/wu.png" alt="游戏本C">
+      <div class="product-info">
+        <h3>游戏本C</h3>
+        <p>简介：144Hz高刷屏，RTX40系显卡！</p>
+        <p>价格：6499元</p>
+        <span class="detail-btn"
+          onclick="showConfig('游戏本C配置<br>CPU：i5-13500H<br>显卡：RTX 4050<br>内存：16G DDR5<br>硬盘：1T SSD')">查看配置</span>
+      </div>
+    </div>
+    <div class="product-item">
+      <img src="images/wu.png" alt="游戏本D">
+      <div class="product-info">
+        <h3>游戏本D</h3>
+        <p>简介：水冷散热，旗舰级配置！</p>
+        <p>价格：9999元</p>
+        <span class="detail-btn"
+          onclick="showConfig('游戏本D配置<br>CPU：i9-13900HX<br>显卡：RTX 4080<br>内存：32G DDR5<br>硬盘：2T SSD')">查看配置</span>
+      </div>
+    </div>
+    <div class="product-item">
+      <img src="images/wu.png" alt="游戏本E">
+      <div class="product-info">
+        <h3>游戏本E</h3>
+        <p>简介：AMD锐龙，高性价比之选！</p>
+        <p>价格：5999元</p>
+        <span class="detail-btn"
+          onclick="showConfig('游戏本E配置<br>CPU：R9-7940HS<br>显卡：RTX 4060<br>内存：32G DDR5<br>硬盘：1T SSD')">查看配置</span>
+      </div>
+    </div>
+    <div class="product-item">
+      <img src="images/wu.png" alt="游戏本F">
+      <div class="product-info">
+        <h3>游戏本F</h3>
+        <p>简介：轻薄游戏本，便携与性能兼具！</p>
+        <p>价格：7499元</p>
+        <span class="detail-btn"
+          onclick="showConfig('游戏本F配置<br>CPU：i7-14700H<br>显卡：RTX 4070<br>内存：16G DDR5<br>硬盘：1T SSD')">查看配置</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 办公本推荐（6个项目） -->
+  <h2 class="title" id="office">办公本推荐</h2>
+  <div class="product-list">
+    <div class="product-item">
+      <img src="images/si.png" alt="办公本1">
+      <div class="product-info">
+        <h3>办公本X</h3>
+        <p>简介：轻薄便携，长续航办公首选！</p>
+        <p>价格：4999元</p>
+        <span class="detail-btn"
+          onclick="showConfig('办公本X配置<br>CPU：i5-1340P<br>显卡：核显<br>内存：16G LPDDR5<br>硬盘：512G SSD')">查看配置</span>
+      </div>
+    </div>
+    <div class="product-item">
+      <img src="images/si.png" alt="办公本2">
+      <div class="product-info">
+        <h3>办公本Y</h3>
+        <p>简介：大屏商务，高效办公！</p>
+        <p>价格：4999元</p>
+        <span class="detail-btn"
+          onclick="showConfig('办公本Y配置<br>CPU：R5-7535U<br>显卡：核显<br>内存：8G DDR4<br>硬盘：512G SSD')">查看配置</span>
+      </div>
+    </div>
+    <div class="product-item">
+      <img src="images/si.png" alt="办公本Z">
+      <div class="product-info">
+        <h3>办公本Z</h3>
+        <p>简介：1.2kg超轻机身，18小时续航！</p>
+        <p>价格：4999元</p>
+        <span class="detail-btn"
+          onclick="showConfig('办公本Z配置<br>CPU：i5-1440P<br>显卡：核显<br>内存：16G LPDDR5<br>硬盘：1T SSD')">查看配置</span>
+      </div>
+    </div>
+    <div class="product-item">
+      <img src="images/si.png" alt="办公本W">
+      <div class="product-info">
+        <h3>办公本W</h3>
+        <p>简介：2.5K触控屏，商务高端之选！</p>
+        <p>价格：4999元</p>
+        <span class="detail-btn"
+          onclick="showConfig('办公本W配置<br>CPU：i7-1360P<br>显卡：核显<br>内存：32G LPDDR5<br>硬盘：1T SSD')">查看配置</span>
+      </div>
+    </div>
+    <div class="product-item">
+      <img src="images/si.png" alt="办公本V">
+      <div class="product-info">
+        <h3>办公本V</h3>
+        <p>简介：AMD长续航，性价比办公！</p>
+        <p>价格：4999元</p>
+        <span class="detail-btn"
+          onclick="showConfig('办公本V配置<br>CPU：R5-7635U<br>显卡：核显<br>内存：16G DDR4<br>硬盘：512G SSD')">查看配置</span>
+      </div>
+    </div>
+    <div class="product-item">
+      <img src="images/si.png" alt="办公本U">
+      <div class="product-info">
+        <h3>办公本U</h3>
+        <p>简介：16英寸大屏，多任务高效处理！</p>
+        <p>价格：4999元</p>
+        <span class="detail-btn"
+          onclick="showConfig('办公本U配置<br>CPU：R7-7735U<br>显卡：核显<br>内存：16G DDR5<br>硬盘：1T SSD')">查看配置</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 配置分类模块 -->
+  <div class="config-category">
+    <h2 class="title">笔记本电脑配置分类</h2>
+    <div class="config-categories">
+      <!-- CPU分类 -->
+      <div class="config-category-item cpu" onclick="showConfig('CPU配置详解<br><br><b>Intel系列：</b><br>1. Intel Core i3 - 入门级，适合日常办公和轻娱乐<br>2. Intel Core i5 - 中端性能，适合多任务处理和轻度游戏<br>3. Intel Core i7 - 高端性能，适合游戏、创作和专业应用<br>4. Intel Core i9 - 旗舰级，适合极致性能需求和多线程工作<br><br><b>AMD系列：</b><br>1. AMD Ryzen 5 - 性价比高，多核心优势明显<br>2. AMD Ryzen 7 - 高性能，适合游戏和创作<br>3. AMD Ryzen 9 - 旗舰级，多核心多线程表现优异')">
+        <div class="item-header">CPU</div>
+      </div>
+      <!-- 显卡分类 -->
+      <div class="config-category-item gpu" onclick="showConfig('显卡配置详解<br><br><b>NVIDIA系列：</b><br>1. NVIDIA GeForce RTX 3050 - 入门级游戏显卡，1080p流畅游戏<br>2. NVIDIA GeForce RTX 3060 - 中高端游戏显卡，1080p高画质/2K流畅<br>3. NVIDIA GeForce RTX 4060 - 新一代中高端，性能提升明显<br>4. NVIDIA GeForce RTX 4070 - 高端显卡，支持4K游戏<br><br><b>AMD系列：</b><br>1. AMD Radeon RX 6700M - 高性能移动显卡，性价比不错<br><br><b>集成显卡：</b><br>适合日常办公和轻度娱乐，功耗低续航长')">
+        <div class="item-header">显卡</div>
+      </div>
+      <!-- 内存分类 -->
+      <div class="config-category-item memory" onclick="showConfig('内存配置详解<br><br><b>容量：</b><br>1. 8GB - 入门级，适合日常办公和轻娱乐<br>2. 16GB - 主流选择，适合多任务处理和游戏<br>3. 32GB - 高端配置，适合专业应用和内容创作<br><br><b>类型：</b><br>1. DDR4 - 较旧标准，性价比高<br>2. DDR5 - 新一代标准，更高频率和带宽<br><br><b>频率：</b><br>1. 3200MHz - 常见DDR4频率<br>2. 4800MHz及以上 - 常见DDR5频率，性能更好')">
+        <div class="item-header">内存</div>
+      </div>
+      <!-- 硬盘分类 -->
+      <div class="config-category-item disk" onclick="showConfig('硬盘配置详解<br><br><b>容量：</b><br>1. 256GB - 入门级，适合系统和少量应用<br>2. 512GB - 主流选择，足够存储系统和常用应用<br>3. 1TB - 推荐选择，适合存储大量游戏、视频等文件<br>4. 2TB - 高端配置，适合内容创作者和数据存储需求大的用户<br><br><b>类型：</b><br>1. NVMe SSD - 高性能，读写速度快<br>2. SATA SSD - 性价比高，速度适中<br><br><b>注意：</b><br>尽量选择NVMe SSD，性能提升显著')">
+        <div class="item-header">硬盘</div>
+      </div>
+      <!-- 屏幕分类 -->
+      <div class="config-category-item screen" onclick="showConfig('屏幕配置详解<br><br><b>尺寸：</b><br>1. 13.3英寸 - 超轻薄便携，适合移动办公<br>2. 14英寸 - 平衡尺寸和性能，主流选择<br>3. 15.6英寸 - 游戏本主流尺寸，视野更宽广<br>4. 16英寸 - 大屏办公和创作首选<br><br><b>分辨率：</b><br>1. 1080p (1920x1080) - 主流，适合大多数场景<br>2. 2K (2560x1440) - 高清晰度，适合创作和观影<br>3. 4K (3840x2160) - 超高清，适合专业设计和影视制作<br><br><b>刷新率：</b><br>1. 60Hz - 标准刷新率，适合日常使用<br>2. 120Hz+ - 高刷新率，适合游戏，画面更流畅')">
+        <div class="item-header">屏幕</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 专注推荐模块 -->
+  <div class="system-all">
+    <div class="more-attention">
+      <div class="more-attention-top">
+        <i class="divider-line"></i>
+        <p class="section-title">专注笔记本推荐十八年</p>
+        <i class="divider-line"></i>
+      </div>
+      <div class="more-attention-write">
+        <div class="more-attention-write-content">
+          <div class="more-attention-write-right">
+            本选科技 —— 专注笔记本推荐。先后与京东、天猫、苏宁等平台深度合作，评测机型超千款，撰写专业选购指南百余篇，累计帮助百万用户选到理想笔记本。推荐方案屡获好评，口碑持续领跑行业！
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 品牌LOGO滑动模块 -->
+  <div class="brand-slider">
+    <div class="brand-list">
+      <div class="brand-item"><img src="https://picsum.photos/80/60?random=101" alt="联想"></div>
+      <div class="brand-item"><img src="https://picsum.photos/80/60?random=102" alt="戴尔"></div>
+      <div class="brand-item"><img src="https://picsum.photos/80/60?random=103" alt="惠普"></div>
+      <div class="brand-item"><img src="https://picsum.photos/80/60?random=104" alt="苹果"></div>
+      <div class="brand-item"><img src="https://picsum.photos/80/60?random=105" alt="华硕"></div>
+      <div class="brand-item"><img src="https://picsum.photos/80/60?random=106" alt="宏碁"></div>
+      <div class="brand-item"><img src="https://picsum.photos/80/60?random=107" alt="华为"></div>
+      <div class="brand-item"><img src="https://picsum.photos/80/60?random=108" alt="小米"></div>
+      <div class="brand-item"><img src="https://picsum.photos/80/60?random=109" alt="机械师"></div>
+      <div class="brand-item"><img src="https://picsum.photos/80/60?random=110" alt="雷蛇"></div>
+      <div class="brand-item"><img src="https://picsum.photos/80/60?random=111" alt="微星"></div>
+      <div class="brand-item"><img src="https://picsum.photos/80/60?random=112" alt="拯救者"></div>
+      <!-- 复制一份品牌列表 -->
+      <div class="brand-item"><img src="https://picsum.photos/80/60?random=101" alt="联想"></div>
+      <div class="brand-item"><img src="https://picsum.photos/80/60?random=102" alt="戴尔"></div>
+      <div class="brand-item"><img src="https://picsum.photos/80/60?random=103" alt="惠普"></div>
+      <div class="brand-item"><img src="https://picsum.photos/80/60?random=104" alt="苹果"></div>
+      <div class="brand-item"><img src="https://picsum.photos/80/60?random=105" alt="华硕"></div>
+      <div class="brand-item"><img src="https://picsum.photos/80/60?random=106" alt="宏碁"></div>
+      <div class="brand-item"><img src="https://picsum.photos/80/60?random=107" alt="华为"></div>
+      <div class="brand-item"><img src="https://picsum.photos/80/60?random=108" alt="小米"></div>
+      <div class="brand-item"><img src="https://picsum.photos/80/60?random=109" alt="机械师"></div>
+      <div class="brand-item"><img src="https://picsum.photos/80/60?random=110" alt="雷蛇"></div>
+      <div class="brand-item"><img src="https://picsum.photos/80/60?random=111" alt="微星"></div>
+      <div class="brand-item"><img src="https://picsum.photos/80/60?random=112" alt="拯救者"></div>
+    </div>
+  </div>
+
+  <!-- 底部信息 -->
+  <div class="footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <p>客服热线(每日9:00-17:00)</p>
+        <h3>400 675 1066</h3>
+        <div class="social-icons">
+          <a href="#"><img src="https://picsum.photos/30/30?random=1" alt="微博"></a>
+          <a href="#"><img src="https://picsum.photos/30/30?random=2" alt="微信"></a>
+          <a href="#"><img src="https://picsum.photos/30/30?random=3" alt="邮件"></a>
+        </div>
+      </div>
+      <div class="footer-middle">
+        <img src="images/liu.png" alt="公众号二维码">
+        <p>明日微信公众号</p>
+      </div>
+      <div class="footer-right">
+        <div class="footer-column">
+          <h4>新手指南</h4>
+          <ul>
+            <li><a href="#">专业知识</a></li>
+            <li><a href="#">技术问答</a></li>
+            <li><a href="#">配件分类</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>帮助中心</h4>
+          <ul>
+            <li><a href="#">VIP权益</a></li>
+            <li><a href="#">专业需求</a></li>
+            <li><a href="#">免费权益</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>交流合作</h4>
+          <ul>
+            <li><a href="#">关于我们</a></li>
+            <li><a href="#">人才招聘</a></li>
+            <li><a href="#">意见反馈</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>其他</h4>
+          <ul>
+            <li><a href="#">版权声明</a></li>
+            <li><a href="#">服务条款</a></li>
+            <li><a href="#">下载APP</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p>贵州省救赎科技有限公司 Copyright ©2007-2017, mingrisoft.com, All Rights Reserved 黔ICP备10002740号 黔公网安备22010202000132</p>
+    </div>
+  </div>
+
+  <!-- 配置弹窗 -->
+  <div class="config-modal" id="configModal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeConfig()">&times;</span>
+      <div id="configDetail"></div>
+    </div>
+  </div>
+
+  <!-- JavaScript 交互：轮播图、弹窗、配置分类切换 -->
+  <script src="script.js"></script>
+</body>
+</html>
